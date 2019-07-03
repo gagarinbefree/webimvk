@@ -3,7 +3,7 @@ import VK, {Auth} from 'react-vk';
 
 const Login = () => {
 	return (
-	    <VK apiId={123}>
+	    <VK apiId={7042337}>
 	      <Auth options={{
 	              onAuth: user => {
 	                console.log(user);
