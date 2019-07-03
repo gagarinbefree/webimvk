@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/webim/static/css/main.2cce8147.chunk.css",
-    "main.js": "/webim/static/js/main.4c180bf2.chunk.js",
-    "main.js.map": "/webim/static/js/main.4c180bf2.chunk.js.map",
-    "runtime~main.js": "/webim/static/js/runtime~main.5aca072b.js",
-    "runtime~main.js.map": "/webim/static/js/runtime~main.5aca072b.js.map",
-    "static/js/2.dec4c6c2.chunk.js": "/webim/static/js/2.dec4c6c2.chunk.js",
-    "static/js/2.dec4c6c2.chunk.js.map": "/webim/static/js/2.dec4c6c2.chunk.js.map",
-    "index.html": "/webim/index.html",
-    "precache-manifest.139dbacf7b4e949e14b4e633a01c9fbf.js": "/webim/precache-manifest.139dbacf7b4e949e14b4e633a01c9fbf.js",
-    "service-worker.js": "/webim/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/webim/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/webim/static/media/logo.5d5d9eef.svg"
+    "main.css": "/Webim/static/css/main.2cce8147.chunk.css",
+    "main.js": "/Webim/static/js/main.d6fafc0b.chunk.js",
+    "main.js.map": "/Webim/static/js/main.d6fafc0b.chunk.js.map",
+    "runtime~main.js": "/Webim/static/js/runtime~main.2ff8a1b4.js",
+    "runtime~main.js.map": "/Webim/static/js/runtime~main.2ff8a1b4.js.map",
+    "static/js/2.dec4c6c2.chunk.js": "/Webim/static/js/2.dec4c6c2.chunk.js",
+    "static/js/2.dec4c6c2.chunk.js.map": "/Webim/static/js/2.dec4c6c2.chunk.js.map",
+    "index.html": "/Webim/index.html",
+    "precache-manifest.36a175acd019693e373a61e2b2d76541.js": "/Webim/precache-manifest.36a175acd019693e373a61e2b2d76541.js",
+    "service-worker.js": "/Webim/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/Webim/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/Webim/static/media/logo.5d5d9eef.svg"
   }
 }
