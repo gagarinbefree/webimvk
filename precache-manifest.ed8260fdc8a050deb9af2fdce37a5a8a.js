@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cfedd6ee025ff20e5bf7e06d8e6c17bb",
+    "revision": "67c054819d2d30554c6740fe72fff634",
     "url": "/Webim/index.html"
   },
   {
-    "revision": "d37c45d59880aac3c840",
+    "revision": "f393abbc5272f67c2870",
     "url": "/Webim/static/css/2.510409cd.chunk.css"
   },
   {
-    "revision": "b20eafe90bbf98a3f36f",
+    "revision": "f7cfab6a8746829193de",
     "url": "/Webim/static/css/main.2cce8147.chunk.css"
   },
   {
-    "revision": "d37c45d59880aac3c840",
-    "url": "/Webim/static/js/2.f541fa1e.chunk.js"
+    "revision": "f393abbc5272f67c2870",
+    "url": "/Webim/static/js/2.abd0d98f.chunk.js"
   },
   {
-    "revision": "b20eafe90bbf98a3f36f",
-    "url": "/Webim/static/js/main.0e8a2707.chunk.js"
+    "revision": "f7cfab6a8746829193de",
+    "url": "/Webim/static/js/main.35e8b142.chunk.js"
   },
   {
     "revision": "3a2b8e54a61517bbf52e",

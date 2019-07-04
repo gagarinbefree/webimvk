@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Webim/static/css/main.2cce8147.chunk.css",
-    "main.js": "/Webim/static/js/main.0e8a2707.chunk.js",
-    "main.js.map": "/Webim/static/js/main.0e8a2707.chunk.js.map",
+    "main.js": "/Webim/static/js/main.35e8b142.chunk.js",
+    "main.js.map": "/Webim/static/js/main.35e8b142.chunk.js.map",
     "runtime~main.js": "/Webim/static/js/runtime~main.2ff8a1b4.js",
     "runtime~main.js.map": "/Webim/static/js/runtime~main.2ff8a1b4.js.map",
     "static/css/2.510409cd.chunk.css": "/Webim/static/css/2.510409cd.chunk.css",
-    "static/js/2.f541fa1e.chunk.js": "/Webim/static/js/2.f541fa1e.chunk.js",
-    "static/js/2.f541fa1e.chunk.js.map": "/Webim/static/js/2.f541fa1e.chunk.js.map",
+    "static/js/2.abd0d98f.chunk.js": "/Webim/static/js/2.abd0d98f.chunk.js",
+    "static/js/2.abd0d98f.chunk.js.map": "/Webim/static/js/2.abd0d98f.chunk.js.map",
     "index.html": "/Webim/index.html",
-    "precache-manifest.3d6d4348465c314dd7a263707affb7c3.js": "/Webim/precache-manifest.3d6d4348465c314dd7a263707affb7c3.js",
+    "precache-manifest.ed8260fdc8a050deb9af2fdce37a5a8a.js": "/Webim/precache-manifest.ed8260fdc8a050deb9af2fdce37a5a8a.js",
     "service-worker.js": "/Webim/service-worker.js",
     "static/css/2.510409cd.chunk.css.map": "/Webim/static/css/2.510409cd.chunk.css.map",
     "static/css/main.2cce8147.chunk.css.map": "/Webim/static/css/main.2cce8147.chunk.css.map"
