@@ -13,8 +13,6 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = initState;
-
-        this.login();
     }
 
     render() {
@@ -22,10 +20,13 @@ class App extends React.Component {
             {this.state.isLogon ? (
                 <React.Fragment>
                     <nav class="navbar navbar-dark bg-primary">
-                        <a class="navbar-brand" href="" onClick={() => this.logout()}>
+                        <div class="navbar-brand">
                             <img className="rounded-circle" src={this.state.photo} width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""></img>
                             <strong className="ml-3">{this.state.user.first_name + " " + this.state.user.last_name}</strong>
-                        </a>
+                        </div>
+                        <div className="navbar-right cursor-pointer" onClick={() => this.logout()}>
+                            <span className="font-weight-light text-light">Выход</span>
+                        </div>
                     </nav>
                     <div className="d-flex align-items-center justify-content-center h-100 mt-3">
                         <div className="d-flex flex-column">
@@ -44,6 +45,10 @@ class App extends React.Component {
                     </div>
                 )}
         </div>
+    }
+
+    componentDidMount() {
+        this.login();
     }
 
     logout() {
