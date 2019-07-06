@@ -48,6 +48,10 @@ class App extends React.Component {
     }
 
     componentDidMount() {
+        window.addEventListener('load', () => this.handleLoad());
+    }
+
+    handleLoad() {
         this.login();
     }
 
