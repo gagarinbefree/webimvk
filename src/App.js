@@ -13,6 +13,8 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = initState;
+
+        this.login();
     }
 
     render() {
@@ -49,11 +51,7 @@ class App extends React.Component {
             this.setState(initState);
         });
     }
-
-    componentDidMount() {
-      this.login();
-    }
-
+        
     login() {
         VK.Auth.login((r) => { // eslint-disable-line no-undef      
             if (r.session) {
