@@ -37,7 +37,7 @@ class App extends React.Component {
                     <div className="d-flex align-items-center justify-content-center h-100 mt-3">
                         <div className="d-flex flex-column">
                             <div className="row mt-3">
-                                <button type="button" class="btn btn-success" onClick={() => this.login()}>
+                                <button type="button" class="btn btn-success" onClick={() => this.login()} ref={this.simulateClick}>
                                     Войти через ВКонтакте
                                 </button>
                             </div>
@@ -45,20 +45,16 @@ class App extends React.Component {
                     </div>
                 )}
         </div>
-    }
-
-    componentDidMount() {
-        window.addEventListener('load', () => this.handleLoad());
-    }
-
-    handleLoad() {
-        this.login();
-    }
+    }    
 
     logout() {
         VK.Auth.logout(() => { // eslint-disable-line no-undef
             this.setState(initState);
         });
+    }
+
+    simulateClick(e) {
+        e.click()
     }
         
     login() {
