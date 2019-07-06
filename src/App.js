@@ -46,12 +46,12 @@ class App extends React.Component {
 
     logout() {
         VK.Auth.logout(() => { // eslint-disable-line no-undef
-            this.setState({ user: undefined, isLogon: false });
+            this.setState(initState);
         });
     }
 
-    componentDidMount() {
-      this.logout();
+    componentWillMount() {
+      this.login();
     }
 
     login() {
