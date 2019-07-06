@@ -1,6 +1,7 @@
 {
   "short_name": "VK Friends",
   "name": "VK Friends App",
+  "default_locale": "en",
   "icons": [
     {
       "src": "favicon.ico",
