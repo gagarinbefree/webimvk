@@ -50,9 +50,9 @@ class App extends React.Component {
         });
     }
 
-    //componentDidMount() {
-    //  //this.login();
-    //}
+    componentDidMount() {
+      this.login();
+    }
 
     login() {
         VK.Auth.login((r) => { // eslint-disable-line no-undef      
