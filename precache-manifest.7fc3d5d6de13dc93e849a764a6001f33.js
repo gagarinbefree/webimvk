@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "67c054819d2d30554c6740fe72fff634",
+    "revision": "a78e6c1ed8b103acc7cc02055af78cb1",
     "url": "/Webim/index.html"
   },
   {
