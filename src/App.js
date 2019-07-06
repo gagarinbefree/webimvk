@@ -51,7 +51,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-      this.login();
+      this.logout();
     }
 
     login() {
