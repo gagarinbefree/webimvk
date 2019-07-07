@@ -37,7 +37,7 @@ class App extends React.Component {
                     <div className="d-flex align-items-center justify-content-center h-100 mt-3">
                         <div className="d-flex flex-column">
                             <div className="row mt-3">
-                                <button type="button" class="btn btn-success" onClick={() => this.login()} ref={this.simulateClick}>
+                                <button type="button" class="btn btn-success" onClick={() => this.login()}>
                                     Войти через ВКонтакте
                                 </button>
                             </div>
@@ -45,7 +45,7 @@ class App extends React.Component {
                     </div>
                 )}
         </div>
-    }    
+    }
 
     logout() {
         VK.Auth.logout(() => { // eslint-disable-line no-undef
@@ -53,11 +53,7 @@ class App extends React.Component {
         });
     }
 
-    simulateClick(e) {
-        e.click()
-    }
-        
-    login() {
+    login(e) {
         VK.Auth.login((r) => { // eslint-disable-line no-undef      
             if (r.session) {
                 VK.api("users.get", { "user_ids": r.session.user.id, fields: "photo_50", "v": "5.101" }, (p) => { // eslint-disable-line no-undef
