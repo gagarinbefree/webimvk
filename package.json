@@ -2,7 +2,7 @@
     "name": "webim",
     "version": "0.1.0",
     "private": true,
-    "homepage": "http://gagarinbefree.github.io/webim",
+    "homepage": "http://gagarinbefree.github.io/Webim",
     "dependencies": {
         "bootstrap": "^4.3.1",
         "fetch-jsonp": "^1.1.3",
