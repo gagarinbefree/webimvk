@@ -6,7 +6,6 @@ import Server from './Server';
 
 const initState = {
     user: undefined,
-    isLogon: false,
     accessToken: ''
 }
 
@@ -19,40 +18,28 @@ class App extends React.Component {
     }
 
     render() {
-        return <div className="App">
-            {this.state.isLogon ? (
-                <React.Fragment>
-                    <nav className="navbar navbar-dark bg-primary">
-                        <div className="navbar-brand">
-                            <img src={this.state.user.photo_50} width="30" height="30" className="d-inline-block align-top rounded-circle" alt=""></img>
-                            <strong className="ml-3">{this.state.user.first_name + " " + this.state.user.last_name}</strong>
-                        </div>
-                        <div className="navbar-right cursor-pointer" onClick={() => this.logout()}>
-                            <span className="font-weight-light text-light">Выход</span>
-                        </div>
-                    </nav>
-                    <div className="d-flex align-items-center justify-content-center h-100 mt-3">
-                        <div className="d-flex flex-column">
-                            <Friends userId={this.state.user.id} accessToken={this.state.accessToken} logout={() => this.logout} />
-                        </div>
-                    </div>
-                </React.Fragment>) : (
-                    <div className="d-flex align-items-center justify-content-center h-100 mt-3">
-                        <div className="d-flex flex-column">
-                            <div className="row mt-3">
-                                <button type="button" className="btn btn-success" onClick={async () => await this.login()}>
-                                    Войти через ВКонтакте
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                )}
+        return <div className="App">                          
+            <nav className="navbar navbar-dark bg-primary">
+                <div className="navbar-brand">
+                    <img src={this.state.user.photo_50} width="30" height="30" className="d-inline-block align-top rounded-circle" alt=""></img>
+                    <strong className="ml-3">{this.state.user.first_name + " " + this.state.user.last_name}</strong>
+                </div>
+                <div className="navbar-right cursor-pointer" onClick={() => this.logout()}>
+                    <span className="font-weight-light text-light">Выход</span>
+                </div>
+            </nav>
+            <div className="d-flex align-items-center justify-content-center h-100 mt-3">
+                <div className="d-flex flex-column">
+                    <Friends userId={this.state.user.id} accessToken={this.state.accessToken} logout={async () => await this.logout()} />
+                </div>
+            </div>
         </div>
     }
 
     logout() {        
         localStorage.clear();
         this.setState(initState);
+        await this.login();
     }
 
     
@@ -86,7 +73,6 @@ class App extends React.Component {
             if (res && res.length > 0) {
                 this.setState( {
                     user: res[0],
-                    isLogon: true,
                     accessToken: token
                 });       
             }
