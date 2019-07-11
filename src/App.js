@@ -13,6 +13,7 @@ const initState = {
 const homePage = 'https://gagarinbefree.github.io/webimvk'
 const clientId = '7047531';
 
+//for test
 //const homePage = 'http://localhost'
 //const clientId = '7053406';
 
@@ -91,38 +92,7 @@ class App extends React.Component {
             else
                 window.location.href = `https://oauth.vk.com/authorize?client_id=${clientId}&display=page&redirect_uri=${homePage}&response_type=token&revoke=1`;
         }
-    }
-
-    /*async login() {
-        let token = this.getQueryString('access_token', document.location.hash);
-        let userId = this.getQueryString('user_id', document.location.hash);
-
-        if (token && userId) {
-            localStorage.setItem('access_token', token);
-            localStorage.setItem('user_id', userId);
-
-            window.location.href = homePage;
-        }
-
-        token = localStorage.getItem('access_token');
-        userId = localStorage.getItem('user_id');
-
-        if(token && userId) {
-            let res = await Server.usersGet(userId, token);
-            if (res && res.length > 0) {
-                this.setState( {
-                    user: res[0],
-                    accessToken: token,
-                    isLogon: true
-                });       
-            }
-            else 
-                this.logout();
-        }
-        else 
-            window.location.href = 'https://oauth.vk.com/authorize?client_id=' + clientId + '&display=page&redirect_uri=' + homePage + '&response_type=token&revoke=1';
-    }*/
-
+    }   
 }
 
 export default App;
