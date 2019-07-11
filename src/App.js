@@ -6,7 +6,8 @@ import Server from './Server';
 
 const initState = {
     user: undefined,
-    accessToken: ''
+    accessToken: '',
+    isLogon: false
 }
 
 const homePage = 'https://gagarinbefree.github.io/webimvk'
@@ -18,7 +19,10 @@ class App extends React.Component {
     }
 
     render() {
-        return <div className="App">                          
+        if (!this.state.isLogon)
+            return null;
+
+        return <div className="App">          
             <nav className="navbar navbar-dark bg-primary">
                 <div className="navbar-brand">
                     <img src={this.state.user.photo_50} width="30" height="30" className="d-inline-block align-top rounded-circle" alt=""></img>
@@ -36,7 +40,7 @@ class App extends React.Component {
         </div>
     }
 
-    logout() {        
+    async logout() {        
         localStorage.clear();
         this.setState(initState);
         await this.login();
@@ -73,7 +77,8 @@ class App extends React.Component {
             if (res && res.length > 0) {
                 this.setState( {
                     user: res[0],
-                    accessToken: token
+                    accessToken: token,
+                    isLogon: true
                 });       
             }
             else 
