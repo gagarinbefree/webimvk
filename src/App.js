@@ -11,6 +11,10 @@ const initState = {
 }
 
 const homePage = 'https://gagarinbefree.github.io/webimvk'
+const clientId = '7047531';
+
+//const homePage = 'http://localhost'
+//const clientId = '7053406';
 
 class App extends React.Component {
     constructor(props) {
@@ -28,7 +32,7 @@ class App extends React.Component {
                     <img src={this.state.user.photo_50} width="30" height="30" className="d-inline-block align-top rounded-circle" alt=""></img>
                     <strong className="ml-3">{this.state.user.first_name + " " + this.state.user.last_name}</strong>
                 </div>
-                <div className="navbar-right cursor-pointer" onClick={() => this.logout()}>
+                <div className="navbar-right cursor-pointer" onClick={async () => await this.logout()}>
                     <span className="font-weight-light text-light">Выход</span>
                 </div>
             </nav>
@@ -43,7 +47,7 @@ class App extends React.Component {
     async logout() {        
         localStorage.clear();
         this.setState(initState);
-        await this.login();
+        window.location.href = homePage;
     }
 
     
@@ -83,7 +87,7 @@ class App extends React.Component {
                 this.logout();
         }
         else 
-            window.location.href = 'https://oauth.vk.com/authorize?client_id=7047531&display=page&redirect_uri=' + homePage + '&response_type=token&revoke=1';
+            window.location.href = 'https://oauth.vk.com/authorize?client_id=' + clientId + '&display=page&redirect_uri=' + homePage + '&response_type=token&revoke=1';
     }
 
 }
