@@ -65,8 +65,6 @@ class App extends React.Component {
         if (token && userId) {
             localStorage.setItem('access_token', token);
             localStorage.setItem('user_id', userId);
-
-            window.location.href=homePage;
         }
 
         token = localStorage.getItem('access_token');
