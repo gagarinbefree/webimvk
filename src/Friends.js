@@ -23,7 +23,7 @@ class Friends extends React.Component {
     }
 
     async getFriends() {    
-        var res = await Server.friendsGet(this.props.userId, this.props.accessToken);
+        var res = await Server.friendsGet(this.props.userId, this.props.accessToken, 5);
         if (!res)
             this.props.logout();
 

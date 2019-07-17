@@ -18,8 +18,8 @@ class Server {
         }
     }
 
-    static async friendsGet(userId, accessToken) {
-        let url = `https://api.vk.com/method/friends.get?user_id=${userId}&fields=photo_50&access_token=${accessToken}&v=5.101`;  
+    static async friendsGet(userId, accessToken, count) {
+        let url = `https://api.vk.com/method/friends.get?user_id=${userId}&fields=photo_50&count=${count}&access_token=${accessToken}&v=5.101`;  
 
         try {
             var data = await jQuery.ajax({
