@@ -11,7 +11,7 @@ class Friends extends React.Component {
 
     render() {
         return <React.Fragment>
-            {this.state.friends.map((item, index) => {
+            {this.state.friends.map((item) => {
                     return <Friend key={item.id} id={item.id} firstName={item.first_name} lastName={item.last_name} online={item.online} photo={item.photo_50} />
                 })
             }

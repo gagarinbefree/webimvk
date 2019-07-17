@@ -33,19 +33,19 @@ class App extends React.Component {
                     <img src={this.state.user.photo_50} width="30" height="30" className="d-inline-block align-top rounded-circle" alt=""></img>
                     <strong className="ml-3">{this.state.user.first_name + " " + this.state.user.last_name}</strong>
                 </div>
-                <div className="navbar-right cursor-pointer" onClick={() => this.logout()}>
+                <div className="navbar-right cursor-pointer" onClick={this.logout}>
                     <span className="font-weight-light text-light">Выход</span>
                 </div>
             </nav>
             <div className="d-flex align-items-center justify-content-center h-100 mt-3">
                 <div className="d-flex flex-column">
-                    <Friends userId={this.state.user.id} accessToken={this.state.accessToken} logout={() => this.logout()} />
+                    <Friends userId={this.state.user.id} accessToken={this.state.accessToken} logout={this.logout} />
                 </div>
             </div>
         </div>
     }
 
-    logout() {        
+    logout = () => {        
         localStorage.clear();
         this.setState(initState);
         window.location.href = homePage;
